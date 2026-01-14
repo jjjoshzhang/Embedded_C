@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/josh/Desktop/Embedded-C/Downloads/All_source_codes/host/ASCII",
-      "program": "/Users/josh/Desktop/Embedded-C/Downloads/All_source_codes/host/ASCII/build/Debug/outDebug"
+      "cwd": "/Users/josh/Desktop/Embedded-C/Instructor/host/host/ASCII",
+      "program": "/Users/josh/Desktop/Embedded-C/Instructor/host/host/ASCII/build/Debug/outDebug"
     }
   ]
 }

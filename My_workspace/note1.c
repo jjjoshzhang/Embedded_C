@@ -33,3 +33,7 @@
     void publicFunction(); // valid dont really need extern, it's assumed
     void helperFunction(); // Error: helperFunction is not visible here
 
+// unsigned
+    //only positive values
+    unsigned int a = 10; // valid
+    unsigned int b = -5; // invalid, negative value assigned to unsigned variable

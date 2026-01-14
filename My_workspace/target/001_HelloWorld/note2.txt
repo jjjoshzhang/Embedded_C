@@ -1,0 +1,25 @@
+// printf outputs on ARM Cotext M3/M4/M7 or higher
+// worksover SWO(serial Wire Output) pins of SWD interface
+
+// serials means send data bit by bit
+
+// Serial Wire Debug(SWD)
+
+// program cannot communicate with SWD directly, use both IDE and debugger probe
+
+// 2-wire protocol(CLK & IO), a connection method to debug MCUs
+// ITM a built in feature used for store data in a buffer and send it to debugger,
+// lets your program send debug data into the CPU’s debug system.
+
+//SWO is a trace output pin used by ITM to send debug information to the debugger
+//Traing means observing wat the cpu is doing while it runs without stoping it, sends observation data out of the chip
+
+/* 
+steps
+	1.	Your code calls printf
+	2.	Characters go into ITM
+	3.	ITM sends them out through SWO
+	4.	Debug probe receives them
+	5.	IDE shows the text
+*/
+
