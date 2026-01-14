@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/josh/Desktop/Embedded-C/Downloads/All_source_codes/host/ASCII",
+      "program": "/Users/josh/Desktop/Embedded-C/Downloads/All_source_codes/host/ASCII/build/Debug/outDebug"
+    }
+  ]
+}

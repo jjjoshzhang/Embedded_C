@@ -1,0 +1,32 @@
+// extern
+    // in file1.c
+    int counter = 0;
+    // in file2.c
+    extern int counter; // declaration
+    void increment(){
+        counter ++;
+    }
+    
+// static
+    // with variables
+
+    // in main.c
+    static int counter; // only accessible within this file(privacy)
+    // in file1.c
+    extern int counter; 
+    int counter = 0; // Error: counter is not visible here
+
+    // with functions
+    // in main.c
+    static void helperFunction(){ // only accessible within this file
+        // do something
+    }
+    void publicFunction(){// accessible from other files
+        // do something
+        helperFunction(); // valid call
+    }
+    // in file1.c
+    void publicFunction(); // valid dont really need extern, it's assumed
+    void helperFunction(); // Error: helperFunction is not visible here
+
+    
