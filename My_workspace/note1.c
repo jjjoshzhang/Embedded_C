@@ -1,13 +1,17 @@
+// storage class specifiers in C
+
 // extern
+// used to access golbal variales or functions defined out side the current file
     // in file1.c
     int counter = 0;
     // in file2.c
-    extern int counter; // declaration
+    extern int counter; // declaration, can be accessed through linker
     void increment(){
         counter ++;
     }
     
 // static
+// make variables or functions private to the file they are defined in
     // with variables
 
     // in main.c
@@ -29,4 +33,3 @@
     void publicFunction(); // valid dont really need extern, it's assumed
     void helperFunction(); // Error: helperFunction is not visible here
 
-    
